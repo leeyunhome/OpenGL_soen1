@@ -130,6 +130,9 @@ void DoDisplay()
 		free(data);
 	}
 
+	glRasterPos2f(-1.0, -1.0);
+	glCopyPixels(100, 100, 80, 50, GL_COLOR);
+
 	glFlush();
 }
 
